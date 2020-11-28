@@ -1,0 +1,71 @@
+html,
+body {
+  overflow: hidden;
+}
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+.App {
+  margin: 0;
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax-wrapper {
+  width: 100vw;
+  height: 45vh;
+
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+.parallax-wrapper::before {
+  content: "";
+  width: 100vw;
+  height: 80vh;
+  top: 0;
+  left: 0;
+  background-image: url("../../assets/pulidora2.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+}
+
+.regular-wrapper {
+  width: 100vw;
+  /* height:100vh; */
+  background-color: white;
+  z-index: 2;
+  position: relative;
+}
+
+.title-p {
+  position: absolute;
+  top: 50%;
+  /* left: 0;
+  right: 0; */
+
+  text-align: center;
+}
+
+.Build-carousel img {
+  height: 300px;
+}
+
+.Build-title h3 {
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 576px) {
+  .Build-carousel img {
+    height: 320px;
+  }
+}

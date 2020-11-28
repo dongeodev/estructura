@@ -1,0 +1,22 @@
+.How{
+  margin-bottom: 6rem;
+  /* border: 1px solid red; */
+}
+
+.How-row{
+  min-height: 300px;
+}
+.card{
+ 
+  transition: 1.5s;
+  
+}
+.card:hover{
+  transform: scale(1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.icon{
+  width: 35px;
+
+}

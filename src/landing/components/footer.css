@@ -1,0 +1,18 @@
+.logo{
+  width: 100px;
+
+}
+.logow{
+  width: 200px;
+
+}
+
+.iconf{
+  width: 20px;
+}
+
+@media screen and (max-width:576px){
+  .logow{
+    width: 100px;
+  }
+}
